@@ -42,7 +42,7 @@
 
 .gradient {
   height: fit-content;
-  z-index: 3;
+  z-index: -1;
   width: 100%;
   max-width: 640px;
   background-image: radial-gradient(
@@ -74,7 +74,8 @@
 /* Tailwind Styles */
 
 .app {
-  @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
+    z-index: 10!important;
+  @apply relative flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
 }
 
 .black_btn {
